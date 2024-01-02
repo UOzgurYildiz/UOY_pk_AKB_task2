@@ -1,4 +1,4 @@
-namespace VbApi;
+namespace Task2_api;
 
 public class Program
 {
