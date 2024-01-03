@@ -1,6 +1,7 @@
 
 
 
+using Task2_api.Middleware;
 using Task2_api.Services;
 
 namespace Task2_api;
@@ -37,6 +38,9 @@ public class Startup
         app.UseHttpsRedirection();
         app.UseRouting();
         app.UseAuthorization();
+
+        app.UseCustomExceptionMiddle();
+        
         app.UseEndpoints(x => { x.MapControllers(); });
     }
 }

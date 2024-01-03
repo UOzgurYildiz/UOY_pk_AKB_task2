@@ -1,4 +1,3 @@
-using System.Diagnostics;
 using System.Net;
 using Task2_api.Services;
 using System.Text.Json;
