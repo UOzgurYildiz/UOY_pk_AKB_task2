@@ -22,7 +22,7 @@ public class Startup
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
 
-        services.AddSingleton<ILoggerService,ConsoleLogger>();
+        services.AddSingleton<ILoggerService,ConsoleLogger>(); //Added logger service with singleton lifetime
 
     }
     
