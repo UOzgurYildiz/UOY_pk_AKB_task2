@@ -1,7 +1,9 @@
 
-using Task2_api.Controllers;
 
-namespace VbApi;
+
+using Task2_api.Services;
+
+namespace Task2_api;
 
 public class Startup
 {
@@ -18,6 +20,8 @@ public class Startup
         
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
+
+        services.AddSingleton<ILoggerService,ConsoleLogger>();
 
     }
     
